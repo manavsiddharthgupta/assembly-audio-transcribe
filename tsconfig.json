@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2018", // or whichever version you prefer
+    "module": "CommonJS",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true, // to skip type checking of declaration files
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "outDir": "dist",
+    "rootDir": "src",
+    "baseUrl": ".", // or your project's base URL
+    "paths": {
+      "*": [
+        "node_modules/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*.ts"
+  ], // adjust the path according to your project structure
+  "exclude": [
+    "node_modules"
+  ]
+}
