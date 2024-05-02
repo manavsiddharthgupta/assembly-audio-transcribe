@@ -6,15 +6,11 @@ dotenv.config()
 
 const app = express()
 const port = process.env.PORT
+
 app.get('/', (req, res) => {
-  res.send('Express + TypeScript Server')
+  res.send('Nothing to see here, see Node js Terminal')
 })
 
-app.get('/record', (req, res) => {
-  audioRecorder()
-  res.send('See Terminal')
-})
+audioRecorder()
 
-app.listen(port, () => {
-  console.log(`[server]: Server is running at http://localhost:${port}`)
-})
+app.listen(port, () => {})
